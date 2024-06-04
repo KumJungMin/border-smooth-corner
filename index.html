@@ -2,7 +2,7 @@
 
 
 <script id="register-worklet">
-  if (CSS.paintWorklet) { 
-    CSS.paintWorklet.addModule('https://codepen.io/robinrendle/pen/YzbVXjv.js');
-  }
+  if ("paintWorklet" in CSS) {
+  CSS.paintWorklet.addModule('index.ts');
+}
 </script>
