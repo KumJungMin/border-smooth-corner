@@ -44,8 +44,8 @@ class SmoothCornersPainter {
       const y = Math.abs(sinT) ** m2 * b * Math.sign(sinT);
 
       // Adjust points to avoid border clipping
-      const adjustX = x > 0 ? x - strokeWidth * 2 : x + strokeWidth * 2;
-      const adjustY = y > 0 ? y - strokeWidth * 2 : y + strokeWidth * 2;
+      const adjustX = x > 0 ? x - strokeWidth / 2 : x + strokeWidth / 2;
+      const adjustY = y > 0 ? y - strokeWidth / 2 : y + strokeWidth / 2;
 
       return { x: adjustX, y: adjustY };
     };
